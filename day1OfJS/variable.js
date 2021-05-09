@@ -1,10 +1,10 @@
 /*
 Create a variable.js file and declare variables and assign string, boolean, undefined and null data types
 
-const vr = "javascript";
-const tr = true;
-const fl = false; 
-const firstName
+const variabl_e = "javascript";
+const tru_e = true;
+const fals_e = false; 
+const firstName;
 console.log(firstName);
 const emptyValue = null;
 */
