@@ -47,5 +47,4 @@ Declare two variables myAge and yourAge and assign them initial values and log t
 
 I am 25 years old.
 You are 30 years old.
-
 */
