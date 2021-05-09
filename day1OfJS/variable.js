@@ -36,11 +36,11 @@ const fouth = 4;
 /*
 Declare variables to store your first name, last name, marital status, country and age in multiple lines
 
-const firstName;
-const lastName ;
-const maritalStatus ;
-const country;
-const age;
+const firstName = 'Luisa';
+const lastName = 'Ramírez';
+const maritalStatus = 'Single';
+const country 'Colombia';
+const age = 22;
 */
 
 
