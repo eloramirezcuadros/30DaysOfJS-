@@ -16,10 +16,10 @@ const emptyValue = null;
 /*
 Declare four variables without assigning values
 
-const first
-const second
-const third
-constfouth
+const first;
+const second;
+const third;
+const fouth;
 */
 
 
