@@ -1,7 +1,7 @@
 /*
 Exercise: Level 1
 1. Declare a variable named challenge and assign it to an initial value '30 Days Of JavaScript';
-const challenge = '30 Days Of JavaScript'
+const challenge = '30 Days Of JavaScript';
 console.log(challenge);
 */
 
@@ -12,7 +12,7 @@ console.log('Greetings, my name is Luisa');
 
 /*
 3. Print the length of the string on the browser console using console.log()
-const name = 'JavaScript'
+const name = 'JavaScript';
 console.log(name.length);
 */
 
@@ -49,7 +49,7 @@ console.log(check.includes('Script'));
 /*
 9. Split the string into an array using split() method
 const arr = 'JavaScript';
-console.log(arr.split(' '))
+console.log(arr.split(' '));
 */
 
 /*
