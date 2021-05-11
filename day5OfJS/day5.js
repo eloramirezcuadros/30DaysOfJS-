@@ -346,8 +346,8 @@ let valueMax = 26;
 let range = valueMax - valueMin
 console.log(range);
 
-const comparation = Math.abs(valueMin = average);
-const comparation2 = Math.abs(valueMax = average);
+const comparation = (valueMin === average);
+const comparation2 = (valueMax === average);
 console.log(comparation);
 console.log(comparation2);
 */
@@ -362,5 +362,4 @@ console.log(comparation2);
 /*
 3. Divide the countries array into two equal arrays if it is even. If countries array is not even , one more country for the first half.
 -See countries.js file...
-
 */
