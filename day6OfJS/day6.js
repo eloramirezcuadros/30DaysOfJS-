@@ -76,17 +76,17 @@ do {
 /*
 3. Iterate 0 to n using for loop
 
-//Iterate with for loop...                                                              PD: FALTA QUE EL NÚMERO 1 APAREZCA COMO n...
-let n = 1;
-for (i = 1; i >= 0; i--) {
-    console.log(i);
+//Iterate with for loop...                                                             
+let n = 0;
+for (i = 0; i >= 0; i--) {
+    console.log(i, i = 'n');
 
 }
 */
 
 
 /*
-4. Write a loop that makes the following pattern using console.log():                  SIIIINNNN RESOLVERRRRRR
+4. Write a loop that makes the following pattern using console.log():                 
 
 #
 ##
@@ -95,7 +95,18 @@ for (i = 1; i >= 0; i--) {
 #####
 ######
 #######
+
+let n = 7;
+let stringPattern = '';
+for (let i = 1; i <= n; i++) {
+    for (let a = 0; a < i; a++) {
+        stringPattern += '#';
+    }
+    stringPattern += '\n'
+}
+console.log(stringPattern);
 */
+
 
 /*
 5. Use loop to print the following pattern:
@@ -134,7 +145,7 @@ i    i^2   i^3
 10   100   1000
 
 for (let i = 0; i <= 10; i++) {
-    console.log(`${i} ^ ${i} = ${i * i}`, '  ', `${i} ^ ${i} = ${i * i * i}`);
+    console.log(`${i}  ${i * i}  ${i * i * i}`);
 }
 */
 
@@ -148,6 +159,7 @@ for (let i = 1; i < 101; i++) {
     }
 }
 */
+
 
 /*
 8. Use for loop to iterate from 0 to 100 and print only odd numbers
