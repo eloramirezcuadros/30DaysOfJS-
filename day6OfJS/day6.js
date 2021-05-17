@@ -175,8 +175,8 @@ for (let i = 1; i < 101; i++) {
 /*
 9. Use for loop to iterate from 0 to 100 and print only prime numbers  ....             SIN TERMINAR AÚN .........................................
 
-for (let i = 2; i < 101; i++) {
-    if (101 % i === 0) {
+for (let i = 1; i < 101; i++) {
+    if (i % 3 === 1) {
         console.log(i);
     }
 }
@@ -188,6 +188,7 @@ for (let i = 2; i < 101; i++) {
 
 The sum of all numbers from 0 to 100 is 5050.
 */
+
 
 /*
 11. Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds.
