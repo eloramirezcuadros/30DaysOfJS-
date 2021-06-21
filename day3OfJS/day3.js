@@ -21,15 +21,15 @@ console.log(typeof 2021); //number
 
 //2. Check if type of '10' is equal to 10
 
-let num1 = '10';
-let num2 = 10;
-
-console.log(num1 === num2); //false
+const number1 = '10';
+const number2 = 10;
+console.log(number1 === number2); //false
 
 //3. Check if parseInt('9.8') is equal to 10
 
 const numFloat = parseFloat('9.81');
-console.log(numFloat === 10); //false
+const numberTen = 10
+console.log(numFloat === numberTen); //false
 
 /*
 4. Boolean value is either true or false.
@@ -113,24 +113,22 @@ const foundd = 'dragon and python';
 console.log(foundd.includes('on')); //true
 
 
-
-
 /*
 7. Use the Date object to do the following activities
 i. What is the year today?
 */
-const today = new Date();
-console.log(today.getFullYear()); //2021
+const yearToday = new Date();
+console.log(yearToday.getFullYear()); //2021
 
 //ii. What is the month today as a number?
 
-const mounth = new Date();
-console.log(mounth.getMonth() + 1); //6
+const monthToday = new Date();
+console.log(monthToday.getMonth() + 1); //6
 
 //iii. What is the date today?
 
-const now = new Date();
-console.log(now); //2021-06-16T22:20:58.228Z
+const today = new Date();
+console.log(today); //2021-06-16T22:20:58.228Z
 
 //iv. What is the day today as a number?
 
@@ -139,18 +137,19 @@ console.log(day.getDate()); //16
 
 //v. What is the hours now?
 
-const hour = new Date();
-console.log(hour.getHours()); //17
+const hoursNow = new Date();
+console.log(hoursNow.getHours()); //17
 
 //vi. What is the minutes now?
 
-const minute = new Date();
-console.log(minute.getMinutes()); //20
+const minutesNow = new Date();
+console.log(minutesNow.getMinutes()); //20
 
 //vii. Find out the numbers of seconds elapsed from January 1, 1970 to now
 
-const now2 = new Date();
-console.log(now2.getTime()); //1623882058236
+const numberSeconds = new Date();
+console.log(numberSeconds.getTime()); //1623882058236
+
 
 
 /*
@@ -160,10 +159,10 @@ Enter base: 20
 Enter height: 10
 The area of the triangle is 50
 */
-const base = Number(prompt('enter base of the triangle'));
-const height = Number(prompt('enter height of the triangle'));
+const base = Number(prompt('enter base of the triangle'));  //20
+const height = Number(prompt('enter height of the triangle'));  //10
 const area = 0.5 * base * height;
-console.log(`The area of the triangle is ${area}`);  //The area of the triangle is 200
+console.log(`The area of the triangle is ${area}`);  //The area of the triangle is 100
 
 
 /*
@@ -193,9 +192,9 @@ console.log(`The area of a rectangle is ${area2} and the perimeter of the rectan
 
 //4. Get radius using prompt and calculate the area of a circle (area = pi x r x r) and circumference of a circle(c = 2 x pi x r) where pi = 3.14.
 
-const r1 = Number(prompt('enter fist value of area circle'));   //20
-const r2 = Number(prompt('enter second value of area circle')); //10
-const r3 = Number(prompt('enter first value of the circle'));   //25
+const r1 = Number(prompt('enter fist value of area circle'));   //first value 20
+const r2 = Number(prompt('enter second value of area circle')); //second value 10
+const r3 = Number(prompt('enter first value of the circle'));   //first value 25
 const pi = 3.14;
 const area3 = pi * r1 * r2;
 const circunference = 2 * pi * r3;
@@ -255,13 +254,13 @@ alert(`Your weekly earning is ${total}`);
 //10. If the length of your name is greater than 7 say, your name is long else say your name is short.
 
 const nam_e = 'luisa';
-nam_e = nam_e.length;
-if (nam_e >= 7) {
-    console.log(`${nam_e} letters, your name is greater`);
+const nam_e2 = nam_e.length;
+if (nam_e2 >= 7) {
+    console.log(`${nam_e2} letters, your name is greater`);  
 } else {
-    console.log(`${nam_e} letters, your name is short`);
+    console.log(`${nam_e2} letters, your name is short`);
 }
-
+//5 letters, your name is short.
 
 
 //11. Compare your first name length and your family name length and you should get this output.
@@ -269,6 +268,7 @@ if (nam_e >= 7) {
 const firstName2 = 'luisa';
 const familyName = 'ramirez';
 firstName2.length > familyName.length ? console.log(`your first name is greater than your family name`) : console.log(`your last name is greater than your name`);
+//your last name is greater than your name.
 
 
 /*
@@ -329,6 +329,7 @@ let hHmM = `  ${date.getHours()}:${date.getMinutes()}`;
 console.log(YYYMMDD + hHmM); //2021/5/17  18:15
 console.log(DDMMYYYY + hHmM); //17/5/2021  18:15
 console.log(DdMmYYy + hHmM); //17/5/2021  18:15
+
 
 
 /*
