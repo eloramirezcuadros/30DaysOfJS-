@@ -9,23 +9,23 @@ console.log('Hi there, my name is Luisa'); //Hi there, my name is Luisa
 
 
 //3. Print the length of the string on the browser console using console.log()
-const name = 'JavaScript';
-console.log(name.length); //9
+const stringLength = 'JavaScript';
+console.log(stringLength.length); //9
 
 
 //4. Change all the string characters to capital letters using toUpperCase() method
-const mayus = 'JavaScript';
-console.log(mayus.toUpperCase()); //JAVASCRIPT
+const stringToUpperCase = 'JavaScript';
+console.log(stringToUpperCase.toUpperCase()); //JAVASCRIPT
 
 
 //5. Change all the string characters to lowercase letters using toLowerCase() method
-const minus = 'JavaScript';
-console.log(minus.toLowerCase()); //javascript
+const stringToLowerCase = 'JavaScript';
+console.log(stringToLowerCase.toLowerCase()); //javascript
 
 
 //6. Cut (slice) out the first word of the string using substr() or substring() method
-const cut = 'JavaScript';
-console.log(cut.substr(0, 4)); //Java
+const challenge2 = 'JavaScript';
+console.log(challenge2 .substr(0, 4)); //Java
 
 
 //7. Slice out the phrase Days Of JavaScript from 30 Days Of JavaScript.
@@ -130,23 +130,30 @@ Exercise: Level 2
 1. Using console.log() print out the following statement:
 The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by John Holmes teaches us to help one another.
 */
-console.log("The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by John Holmes teaches us to help one another.");
+const paragraph = "The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by John Holmes teaches us to help one another.";
+console.log(paragraph);
 //The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by John Holmes teaches us to help one another.
 
 
-//2. Using console.log() print out the following quote by Mother Teresa:
-//"Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead."
-console.log("Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead.");
+/*
+2. Using console.log() print out the following quote by Mother Teresa:
+"Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead."
+*/
+const paragraph2 = "Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead.";
+console.log(paragraph2);
 //Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead.
 
 
 //3. Check if typeof '10' is exactly equal to 10. If not make it exactly equal.
-console.log('10' == '10'); //true
+const numberTen = '10';
+const numberTen2 = '10';
+console.log(numberTen == numberTen2); //true
 
 
 //4. Check if parseFloat('9.8') is equal to 10 if not make it exactly equal with 10.
-const numFl = parseFloat('9.81');
-console.log(numFl === 10); //false
+const numFloat = parseFloat('9.81');
+const numberTen3 = 10;
+console.log(numFloat === numberTen3); //false
 
 
 //5. Check if 'on' is found in both python and jargon
@@ -228,7 +235,7 @@ Does this motivate you to be a teacher This 30DaysOfJavaScript is also the resul
 //'He earns 5000 euros of salary per month, 10000 euros of annual bonus, 15000 euros of online courses per month'.
 const salary = 'He earns 5000 euros of salary per month, 10000 euros of annual bonus, 15000 euros of online courses per month';
 const money = salary.match(/(\d+)/g);
-let multiplication1 = Number(money[0]) * 12;
-let multiplication2 = Number(money[1]);
-let multiplication3 = Number(money[2]) * 12;
+const multiplication1 = Number(money[0]) * 12;
+const multiplication2 = Number(money[1]);
+const multiplication3 = Number(money[2]) * 12;
 console.log(multiplication1 + multiplication2 + multiplication3); //250000
