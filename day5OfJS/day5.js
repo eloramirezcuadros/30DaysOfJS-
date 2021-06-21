@@ -33,6 +33,7 @@ function empty_Array(elements) {
 const createArray1 = empty_Array(0);
 console.log(createArray1); //[]
 
+// QUE ME LLEVE LA VERGA DE UNA PUTA VEZ, Y NO ME VUELVA A TRAER GANARARRREEEAAAAAA
 
 //2. Declare an array with more than 5 number of elements
 function fillTheArray(number, arrayInput) {
@@ -42,6 +43,7 @@ const arrayWithMoreThanFiveNum = createArray(8);
 const arrayOfNumbers = fillTheArray(6, arrayWithMoreThanFiveNum)
 console.log(arrayOfNumbers);
 
+//TÚ, SI TÚ, PUTO EL QUE LO LEA
 
 //3. Find the length of your array
 
@@ -50,53 +52,53 @@ console.log(arra_y3.length);
 
 
 //4. Get the first item, the middle item and the last item of the array
-
+/*
 const arra_y4 = ['Hello', 'My', 'Name', 'Is', 'Luisa', 'Ramírez', 'Cuadros'];
 console.log(arra_y4[0], arra_y4[3], arra_y4[arra_y4.length - 1]);
-
+*/
 
 //5. Declare an array called mixedDataTypes, put different data types in the array and find the length of the array. The array size should be greater than 5
-
+/*
 const mixedDataTypes = ['Hello', 4, true, 'Colombia', , 'Lasagna', 'Mango'];
 console.log(mixedDataTypes.length);
-
+*/
 
 //6. Declare an array variable name itCompanies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon
 
-const itCompanies = ['Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon'];
+//const itCompanies = ['Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon'];
 
 
 //7. Print the array using console.log()
 
-console.log(itCompanies);
+//console.log(itCompanies);
 
 
 //8. Print the number of companies in the array
-
+/*
 const itCompanies3 = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'];
 console.log(itCompanies3.length);
-
+*/
 
 //9. Print the first company, middle and last company
-
+/*
 const itCompanies4 = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'];
 console.log(itCompanies4[0], itCompanies4[3], itCompanies4[itCompanies4.length - 1]);
-
+*/
 
 //10. Print out each company
-
+/*
 const itCompanies5 = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'];
 itCompanies5.forEach(element => console.log(element));
-
+*/
 
 //11. Change each company name to uppercase one by one and print them out. 
-
+/*
 const itCompanies6 = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'];
 const result = [];
 let check = itCompanies6.forEach((element) => result.push(element.toUpperCase()));
 
 console.log(result);
-
+*/
 
 
 /*
