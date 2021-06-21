@@ -24,102 +24,74 @@ const webTechs = [
   'Node',
   'MongoDB'
 ]
-
-/*
-1. Declare an empty array
-
-const arr = [];
-console.log(arr);
 */
 
+//1. Declare an empty array
 
-/*
-2. Declare an array with more than 5 number of elements
-
-const arr = ['Hello', 'My', 'Name', 'Is', 'Luisa', 'Ramírez', '22'];
-console.log(arr);
-*/
+const empty_Array = [];
+console.log(empty_Array);
 
 
-/*
-3. Find the length of your array
+//2. Declare an array with more than 5 number of elements
 
-const arr = ['Hello', 'My', 'Name', 'Is', 'Luisa', 'Ramírez', '22'];
-console.log(arr.length);
-*/
-
-/*
-4. Get the first item, the middle item and the last item of the array
-
-const arr = ['Hello', 'My', 'Name', 'Is', 'Luisa', 'Ramírez', 'Cuadros'];
-
-console.log(arr[0], arr[3], arr[arr.length - 1]);
-*/
+const arra_y2 = ['Hello', 'My', 'Name', 'Is', 'Luisa', 'Ramírez', '22'];
+console.log(arra_y2);
 
 
-/*
-5. Declare an array called mixedDataTypes, put different data types in the array and find the length of the array. The array size should be greater than 5
+//3. Find the length of your array
+
+const arra_y3 = ['Hello', 'My', 'Name', 'Is', 'Luisa', 'Ramírez', '22'];
+console.log(arra_y3.length);
+
+
+//4. Get the first item, the middle item and the last item of the array
+
+const arra_y4 = ['Hello', 'My', 'Name', 'Is', 'Luisa', 'Ramírez', 'Cuadros'];
+console.log(arra_y4[0], arra_y4[3], arra_y4[arra_y4.length - 1]);
+
+
+//5. Declare an array called mixedDataTypes, put different data types in the array and find the length of the array. The array size should be greater than 5
 
 const mixedDataTypes = ['Hello', 4, true, 'Colombia', , 'Lasagna', 'Mango'];
-
 console.log(mixedDataTypes.length);
-*/
 
 
-/*
-6. Declare an array variable name itCompanies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon
-
-const itCompanies = ['Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon'];
-*/
-
-
-/*
-7. Print the array using console.log()
+//6. Declare an array variable name itCompanies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon
 
 const itCompanies = ['Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon'];
 
-console.log(itCompanie);
-*/
+
+//7. Print the array using console.log()
+
+console.log(itCompanies);
 
 
-/*
-8. Print the number of companies in the array
+//8. Print the number of companies in the array
 
-const itCompanies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'];
-
-console.log(itCompanies.length);
-*/
+const itCompanies3 = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'];
+console.log(itCompanies3.length);
 
 
-/*
-9. Print the first company, middle and last company
+//9. Print the first company, middle and last company
 
-const itCompanies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'];
-
-console.log(itCompanies[0], itCompanies[3], itCompanies[itCompanies.length - 1]);
-*/
+const itCompanies4 = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'];
+console.log(itCompanies4[0], itCompanies4[3], itCompanies4[itCompanies4.length - 1]);
 
 
-/*
-10. Print out each company
+//10. Print out each company
 
-const itCompanies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'];
-
-itCompanies.forEach(element => console.log(element));
-*/
+const itCompanies5 = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'];
+itCompanies5.forEach(element => console.log(element));
 
 
-/*
-11. Change each company name to uppercase one by one and print them out. 
+//11. Change each company name to uppercase one by one and print them out. 
 
-const itCompanies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'];
-
+const itCompanies6 = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'];
 const result = [];
-
-let check = itCompanies.forEach((element) => result.push(element.toUpperCase()));
+let check = itCompanies6.forEach((element) => result.push(element.toUpperCase()));
 
 console.log(result);
-*/
+
 
 
 /*
