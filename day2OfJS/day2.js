@@ -23,28 +23,28 @@ console.log(stringToLowerCase.toLowerCase()); //30 days of javascript
 
 
 //6. Cut (slice) out the first word of the string using substr() or substring() method
-const challenge2 = '30 Days Of JavaScript';
-console.log(challenge2 .substr(3, 5)); //Days
+const cutFirstWord = '30 Days Of JavaScript';
+console.log(cutFirstWord.substr(3, 5)); //Days
 
 
 //7. Slice out the phrase Days Of JavaScript from 30 Days Of JavaScript.
-const phrase = '30 Days Of JavaScript';
-console.log(phrase.substr(3, 21)); //Days Of JavaScript
+const cutPhrase = '30 Days Of JavaScript';
+console.log(cutPhrase.substr(3, 21)); //Days Of JavaScript
 
 
 //8. Check if the string contains a word Script using includes() method
-const myWord = '30 Days Of JavaScript';
-console.log(myWord.includes('Script')); //true
+const checkThatContainScript = '30 Days Of JavaScript';
+console.log(checkThatContainScript.includes('Script')); //true
 
 
 //9. Split the string into an array using split() method
-const myString = 'JavaScript';
-console.log(myString.split('')); //['J', 'a', 'v', 'a','S', 'c', 'r', 'i','p', 't']
+const splitStringInArray = 'JavaScript';
+console.log(splitStringInArray.split('')); //['J', 'a', 'v', 'a','S', 'c', 'r', 'i','p', 't']
 
 
 //10. Split the string 30 Days Of JavaScript at the space using split() method
-const myWord2 = '30 Days Of JavaScript';
-console.log(myWord2.split('')); //['3', '0', ' ', 'D', 'a', 'y', 's', ' ', 'O', 'f', ' ', 'J', 'a', 'v', 'a', 'S', 'c', 'r', 'i', 'p', 't']
+const splitStringInArray2 = '30 Days Of JavaScript';
+console.log(splitStringInArray2.split('')); //['3', '0', ' ', 'D', 'a', 'y', 's', ' ', 'O', 'f', ' ', 'J', 'a', 'v', 'a', 'S', 'c', 'r', 'i', 'p', 't']
 
 
 //11. 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon' split the string at the comma and change it to an array.
@@ -53,73 +53,73 @@ console.log(converToArray.split(',')); //['Facebook',' Google',' Microsoft',' Ap
 
 
 //12. Change 30 Days Of JavaScript to 30 Days Of Python using replace() method.
-const change = '30 Days Of JavaScript';
-change1 = change.replace('JavaScript', 'Python');
-console.log(change1); //30 Days Of Python
+const ReplaceJavaScriptwithPython = '30 Days Of JavaScript';
+ReplaceJavaScriptwithPython1 = ReplaceJavaScriptwithPython.replace('JavaScript', 'Python');
+console.log(ReplaceJavaScriptwithPython1); //30 Days Of Python
 
 //13. What is character at index 15 in '30 Days Of JavaScript' string? Use charAt() method.
-const character = '30 Days Of JavaScript';
-console.log(character.charAt(15)); //S
+const findCharacter = '30 Days Of JavaScript';
+console.log(findCharacter.charAt(15)); //S
 
 
 //14. What is the character code of J in '30 Days Of JavaScript' string using charCodeAt()
-const character2 = '30 Days Of JavaScript';
-console.log(character2.charCodeAt('J')); //51
+const findCharacterJ = '30 Days Of JavaScript';
+console.log(findCharacterJ.charCodeAt('J')); //51
 
 
 //15. Use indexOf to determine the position of the first occurrence of a in 30 Days Of JavaScript
-const fisrtOccurrence = '30 Days Of JavaScript';
-console.log(fisrtOccurrence.indexOf('a')); //4
+const determineFisrtOccurrence = '30 Days Of JavaScript';
+console.log(determineFisrtOccurrence.indexOf('a')); //4
 
 
 //16. Use lastIndexOf to determine the position of the last occurrence of a in 30 Days Of JavaScript.
-const lastOccurrence = '30 Days Of JavaScript';
-console.log(lastOccurrence.lastIndexOf('a')); //14
+const determineLastOccurrence = '30 Days Of JavaScript';
+console.log(determineLastOccurrence.lastIndexOf('a')); //14
 
 
 //17. Use indexOf to find the position of the first occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
-const fisrtOccurrence2 = 'You cannot end a sentence with because because because is a conjunction';
-console.log(fisrtOccurrence2.indexOf('because')); //31
+const determineFisrtOccurrence2 = 'You cannot end a sentence with because because because is a conjunction';
+console.log(determineFisrtOccurrence2.indexOf('because')); //31
 
 
 //18. Use lastIndexOf to find the position of the last occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
-const lastOccurrence2 = 'You cannot end a sentence with because because because is a conjunction';
-console.log(lastOccurrence2.lastIndexOf('because')); //47
+const determineLastOccurrence2 = 'You cannot end a sentence with because because because is a conjunction';
+console.log(determineLastOccurrence2.lastIndexOf('because')); //47
 
 
 //19. Use search to find the position of the first occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
-const fisrtOccurrence3 = 'You cannot end a sentence with because because because is a conjunction';
-console.log(fisrtOccurrence3.search('because')); //31
+const determineFisrtOccurrence3 = 'You cannot end a sentence with because because because is a conjunction';
+console.log(determineFisrtOccurrence3.search('because')); //31
 
 
 //20. Use trim() to remove any trailing whitespace at the beginning and the end of a string.E.g ' 30 Days Of JavaScript '.
-const remov_e = ' 30 Days Of JavaScript ';
-console.log(remov_e.trim(' 30 Days Of JavaScript ')); //30 Day Of JavaScript
+const removeBlankSpaces = ' 30 Days Of JavaScript ';
+console.log(removeBlankSpaces.trim(' 30 Days Of JavaScript ')); //30 Day Of JavaScript
 
 
 //21. Use startsWith() method with the string 30 Days Of JavaScript and make the result true
-const strin_g = '30 Days Of JavaScript';
-console.log(strin_g.startsWith('30')); //true
+const makeResultTrue = '30 Days Of JavaScript';
+console.log(makeResultTrue.startsWith('30')); //true
 
 
 //22. Use endsWith() method with the string 30 Days Of JavaScript and make the result true
-const strin_g2 = '30 Days Of JavaScript';
-console.log(strin_g2.endsWith('Script')); //true
+const makeResultTrue2 = '30 Days Of JavaScript';
+console.log(makeResultTrue2.endsWith('Script')); //true
 
 
 //23. Use match() method to find all the a’s in 30 Days Of JavaScript
-const strin_g3 = '30 Days Of JavaScript';
-console.log(strin_g3.match(/a/gi)); //[ 'a', 'a', 'a' ]
+const findAll_A = '30 Days Of JavaScript';
+console.log(findAll_A.match(/a/gi)); //[ 'a', 'a', 'a' ]
 
 
 //24. Use concat() and merge '30 Days of' and 'JavaScript' to a single string, '30 Days Of JavaScript'
-const join = '30 Days Of';
-console.log(join.concat(' JavaScript')); //30 Days Of JavaScript
+const unitedJoin = '30 Days Of';
+console.log(unitedJoin.concat(' JavaScript')); //30 Days Of JavaScript
 
 
 //25. Use repeat() method to print 30 Days Of JavaScript 2 times
-const challenge3 = '30 Days Of JavaScript';
-console.log(challenge3.repeat(2)); //30 Days Of JavaScript30 Days Of JavaScript
+const repeatStringTwice = '30 Days Of JavaScript';
+console.log(repeatStringTwice.repeat(2)); //30 Days Of JavaScript30 Days Of JavaScript
 
 
 
@@ -161,8 +161,8 @@ console.log(found_On.match(/on/gi)); //[ 'on', 'on' ]
 
 
 //6. I hope this course is not full of jargon. Check if jargon is in the sentence.
-const phrase2 = 'I hope this course is not full of jargon';
-console.log(phrase2.search('jargon')); //34
+const checkIfJargonIsInString = 'I hope this course is not full of jargon';
+console.log(checkIfJargonIsInString.search('jargon')); //34
 
 
 //7. Generate a random number between 0 and 100 inclusively.
@@ -205,26 +205,26 @@ console.log('1\t1\t1\t1\t1\n2\t1\t2\t4\t8\n3\t1\t3\t9\t27\n4\t1\t4\t16\t64\n5\t1
 
 
 //12. Use substr to slice out the phrase 'You cannot end a sentence with because because because is a conjunction' from the following sentence:'You cannot end a sentence with because because because is a conjunction'
-const phrase3 = 'You cannot end a sentence with because because because is a conjunction';
-console.log(phrase3.substr(31, 24)); //because because because
+const cutBecause = 'You cannot end a sentence with because because because is a conjunction';
+console.log(cutBecause.substr(31, 24)); //because because because
 
 
 
 
 //Exercises: Level 3
 //1. 'Love is the best thing in this world. Some found their love and some are still looking for their love.' Count the number of word love in this sentence.
-const love = 'Love is the best thing in this world. Some found their love and some are still looking for their love.';
-console.log(love.match(/love/gi)); //[ 'Love', 'love', 'love' ]
+const countWordLove = 'Love is the best thing in this world. Some found their love and some are still looking for their love.';
+console.log(countWordLove.match(/love/gi)); //[ 'Love', 'love', 'love' ]
 
 
 //2. Use match() to count the number of all because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
-const because = 'You cannot end a sentence with because because because is a conjunction';
-console.log(because.match(/because/gi)); //[ 'because', 'because', 'because' ]
+const countWordBecause = 'You cannot end a sentence with because because because is a conjunction';
+console.log(countWordBecause.match(/because/gi)); //[ 'because', 'because', 'because' ]
 
 
 //3. Clean the following text and find the most frequent word(hint, use replace and regular expressions).
-const sentence = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs./%Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching';
-console.log(sentence.replace(/[^a-zA-Z 0-9.]+/gi, ''));
+const cleanText = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs./%Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching';
+console.log(cleanText.replace(/[^a-zA-Z 0-9.]+/gi, ''));
 /*I am a teacher and I love teaching. There is nothing as more rewarding as educating and empowering people. I found teaching more interesting than any other jobs.
 Does this motivate you to be a teacher This 30DaysOfJavaScript is also the result of love of teaching
 */
