@@ -27,15 +27,20 @@ const webTechs = [
 */
 
 //1. Declare an empty array
-
-const empty_Array = [];
-console.log(empty_Array);
+function empty_Array(elements) {
+  return new Array(elements);
+}
+const createArray1 = empty_Array(0);
+console.log(createArray1); //[]
 
 
 //2. Declare an array with more than 5 number of elements
-
-const arra_y2 = ['Hello', 'My', 'Name', 'Is', 'Luisa', 'Ramírez', '22'];
-console.log(arra_y2);
+function fillTheArray(number, arrayInput) {
+  return arrayInput.fill(number);
+}
+const arrayWithMoreThanFiveNum = createArray(8);               
+const arrayOfNumbers = fillTheArray(6, arrayWithMoreThanFiveNum)
+console.log(arrayOfNumbers);
 
 
 //3. Find the length of your array
