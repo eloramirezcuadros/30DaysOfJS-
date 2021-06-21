@@ -21,37 +21,37 @@ console.log(typeof 2021); //number
 
 //2. Check if type of '10' is equal to 10
 
-const number1 = '10';
-const number2 = 10;
-console.log(number1 === number2); //false
+const numberTenTypeofString = '10';
+const numberTenTypeofNumber = 10;
+console.log(numberTenTypeofString === numberTenTypeofNumber); //false
 
 //3. Check if parseInt('9.8') is equal to 10
 
-const numFloat = parseFloat('9.81');
-const numberTen = 10
-console.log(numFloat === numberTen); //false
+const numberFloatString = parseFloat('9.81');
+const numberTenTypeofNumbe_r = 10
+console.log(numberFloatString === numberTenTypeofNumbe_r); //false
 
 /*
 4. Boolean value is either true or false.
 i. Write three JavaScript statement which provide truthy value.
 */
-const up = true;
+const fullString = true;
 const tenIsHigherThanNine = 10 > 9;
-const equall = 1 === 1;
+const equalNumber = 1 === 1;
 
-console.log(up); //true
+console.log(fullString); //true
 console.log(tenIsHigherThanNine); //true
-console.log(equall); //true
+console.log(equalNumber); //true
 
 //ii. Write three JavaScript statement which provide falsy value.
 
-const down = false;
+const emptyString = '';
 const tenIsHigherThanEleven = 10 > 11;
-const equall2 = 1 == 2;
+const equalNumber2 = 1 == 2;
 
-console.log(down); //false
+console.log(emptyString); //false
 console.log(tenIsHigherThanEleven); //false
-console.log(equall2); //false
+console.log(equalNumber2); //false
 
 /*
 5. Figure out the result of the following comparison expression first without using console.log(). After you decide the result confirm it using console.log()
@@ -109,8 +109,8 @@ console.log(!(4 === '4')); //true
 
 //xi. There is no 'on' in both dragon and python
 
-const foundd = 'dragon and python';
-console.log(foundd.includes('on')); //true
+const foundOn = 'dragon and python';
+console.log(foundOn.includes('on')); //true
 
 
 /*
@@ -127,13 +127,13 @@ console.log(monthToday.getMonth() + 1); //6
 
 //iii. What is the date today?
 
-const today = new Date();
-console.log(today); //2021-06-16T22:20:58.228Z
+const dateToday = new Date();
+console.log(dateToday); //2021-06-16T22:20:58.228Z
 
 //iv. What is the day today as a number?
 
-const day = new Date();
-console.log(day.getDate()); //16
+const dayToday = new Date();
+console.log(dayToday.getDate()); //16
 
 //v. What is the hours now?
 
@@ -253,12 +253,12 @@ alert(`Your weekly earning is ${total}`);
 
 //10. If the length of your name is greater than 7 say, your name is long else say your name is short.
 
-const nam_e = 'luisa';
-const nam_e2 = nam_e.length;
-if (nam_e2 >= 7) {
-    console.log(`${nam_e2} letters, your name is greater`);  
+const findLengthName = 'luisa';
+const findLengthName2 = nam_e.length;
+if (findLengthName2 >= 7) {
+    console.log(`${findLengthName2} letters, your name is greater`);  
 } else {
-    console.log(`${nam_e2} letters, your name is short`);
+    console.log(`${findLengthName2} letters, your name is short`);
 }
 //5 letters, your name is short.
 
@@ -320,11 +320,11 @@ YYYY-MM-DD HH:mm
 DD-MM-YYYY HH:mm
 DD/MM/YYYY HH:mm
 */
-const date = new Date();
-let YYYMMDD = `${date.getFullYear()}/${date.getMonth()}/${date.getDate()}`;
-let DDMMYYYY = `${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`;
-let DdMmYYy = `${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`;
-let hHmM = `  ${date.getHours()}:${date.getMinutes()}`;
+const createReadableTimeFormat = new Date();
+const YYYMMDD = `${createReadableTimeFormat.getFullYear()}/${createReadableTimeFormat.getMonth()}/${createReadableTimeFormat.getDate()}`;
+const DDMMYYYY = `${createReadableTimeFormat.getDate()}/${createReadableTimeFormat.getMonth()}/${createReadableTimeFormat.getFullYear()}`;
+const DdMmYYy = `${createReadableTimeFormat.getDate()}/${createReadableTimeFormat.getMonth()}/${createReadableTimeFormat.getFullYear()}`;
+const hHmM = `  ${createReadableTimeFormat.getHours()}:${createReadableTimeFormat.getMinutes()}`;
 
 console.log(YYYMMDD + hHmM); //2021/5/17  18:15
 console.log(DDMMYYYY + hHmM); //17/5/2021  18:15
@@ -337,10 +337,10 @@ Exercises: Level 3
 1. Create a human readable time format using the Date time object. The hour and the minute should be all the time two digits(7 hours should be 07 and 5 minutes should be 05 )
 YYY-MM-DD HH:mm eg. 20120-01-02 07:05
 */
-const date2 = new Date();
-const YYYMMDD2 = `${date2.getFullYear()}/${date2.getMonth()}/${date2.getDate()}`;
+const createReadableTimeFormat2 = new Date();
+const YYYMMDD2 = `${date2.getFullYear()}/${createReadableTimeFormat2.getMonth()}/${createReadableTimeFormat2.getDate()}`;
 
 console.log(YYYMMDD2);
-console.log(date2.toLocaleTimeString(['en-US'], { hour: '2-digit', minute: '2-digit' }));
+console.log(createReadableTimeFormat2.toLocaleTimeString(['en-US'], { hour: '2-digit', minute: '2-digit' }));
 //2021/5/17
 //06:18 PM
