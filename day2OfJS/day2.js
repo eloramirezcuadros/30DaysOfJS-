@@ -1,31 +1,30 @@
 //Exercise: Level 1
 //1. Declare a variable named challenge and assign it to an initial value '30 Days Of JavaScript';
-const challenge = '30 Days Of JavaScript';
-console.log(challenge); //30 Days Of JavaScript
+const challenge = '30 Days Of JavaScript'
 
 
 //2. Print the string on the browser console using console.log()
-console.log('Hi there, my name is Luisa'); //Hi there, my name is Luisa
+console.log(challenge); //30 Days Of JavaScript
 
 
 //3. Print the length of the string on the browser console using console.log()
-const stringLength = 'JavaScript';
-console.log(stringLength.length); //9
+const stringLength = '30 Days Of JavaScript';
+console.log(stringLength.length); //21
 
 
 //4. Change all the string characters to capital letters using toUpperCase() method
-const stringToUpperCase = 'JavaScript';
-console.log(stringToUpperCase.toUpperCase()); //JAVASCRIPT
+const stringToUpperCase = '30 Days Of JavaScript';
+console.log(stringToUpperCase.toUpperCase()); //30 DAYS OF JAVASCRIPT
 
 
 //5. Change all the string characters to lowercase letters using toLowerCase() method
-const stringToLowerCase = 'JavaScript';
-console.log(stringToLowerCase.toLowerCase()); //javascript
+const stringToLowerCase = '30 Days Of JavaScript';
+console.log(stringToLowerCase.toLowerCase()); //30 days of javascript
 
 
 //6. Cut (slice) out the first word of the string using substr() or substring() method
-const challenge2 = 'JavaScript';
-console.log(challenge2 .substr(0, 4)); //Java
+const challenge2 = '30 Days Of JavaScript';
+console.log(challenge2 .substr(3, 5)); //Days
 
 
 //7. Slice out the phrase Days Of JavaScript from 30 Days Of JavaScript.
@@ -34,7 +33,7 @@ console.log(phrase.substr(3, 21)); //Days Of JavaScript
 
 
 //8. Check if the string contains a word Script using includes() method
-const myWord = 'JavaScript';
+const myWord = '30 Days Of JavaScript';
 console.log(myWord.includes('Script')); //true
 
 
@@ -45,12 +44,12 @@ console.log(myString.split('')); //['J', 'a', 'v', 'a','S', 'c', 'r', 'i','p', '
 
 //10. Split the string 30 Days Of JavaScript at the space using split() method
 const myWord2 = '30 Days Of JavaScript';
-console.log(myWord2.split('')); //['30 Days Of JavaScript']
+console.log(myWord2.split('')); //['3', '0', ' ', 'D', 'a', 'y', 's', ' ', 'O', 'f', ' ', 'J', 'a', 'v', 'a', 'S', 'c', 'r', 'i', 'p', 't']
 
 
 //11. 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon' split the string at the comma and change it to an array.
-const arraY = 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon';
-console.log(arraY.split(',')); //['Facebook',' Google',' Microsoft',' Apple',' IBM',' Oracle',' Amazon']
+const converToArray = 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon';
+console.log(converToArray.split(',')); //['Facebook',' Google',' Microsoft',' Apple',' IBM',' Oracle',' Amazon']
 
 
 //12. Change 30 Days Of JavaScript to 30 Days Of Python using replace() method.
@@ -69,28 +68,28 @@ console.log(character2.charCodeAt('J')); //51
 
 
 //15. Use indexOf to determine the position of the first occurrence of a in 30 Days Of JavaScript
-const occurrenc_e = '30 Days Of JavaScript';
-console.log(occurrenc_e.indexOf('a')); //4
+const fisrtOccurrence = '30 Days Of JavaScript';
+console.log(fisrtOccurrence.indexOf('a')); //4
 
 
 //16. Use lastIndexOf to determine the position of the last occurrence of a in 30 Days Of JavaScript.
-const occurrenc_e2 = '30 Days Of JavaScript';
-console.log(occurrenc_e2.lastIndexOf('a')); //14
+const lastOccurrence = '30 Days Of JavaScript';
+console.log(lastOccurrence.lastIndexOf('a')); //14
 
 
 //17. Use indexOf to find the position of the first occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
-const occurrenc_e3 = 'You cannot end a sentence with because because because is a conjunction';
-console.log(occurrenc_e3.indexOf('because')); //31
+const fisrtOccurrence2 = 'You cannot end a sentence with because because because is a conjunction';
+console.log(fisrtOccurrence2.indexOf('because')); //31
 
 
 //18. Use lastIndexOf to find the position of the last occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
-const occurrenc_e4 = 'You cannot end a sentence with because because because is a conjunction';
-console.log(occurrenc_e4.lastIndexOf('because')); //47
+const lastOccurrence2 = 'You cannot end a sentence with because because because is a conjunction';
+console.log(lastOccurrence2.lastIndexOf('because')); //47
 
 
 //19. Use search to find the position of the first occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
-const occurrenc_e5 = 'You cannot end a sentence with because because because is a conjunction';
-console.log(occurrenc_e5.search('because')); //31
+const fisrtOccurrence3 = 'You cannot end a sentence with because because because is a conjunction';
+console.log(fisrtOccurrence3.search('because')); //31
 
 
 //20. Use trim() to remove any trailing whitespace at the beginning and the end of a string.E.g ' 30 Days Of JavaScript '.
@@ -119,8 +118,8 @@ console.log(join.concat(' JavaScript')); //30 Days Of JavaScript
 
 
 //25. Use repeat() method to print 30 Days Of JavaScript 2 times
-const phrase2 = '30 Days Of JavaScript';
-console.log(phrase2.repeat(2)); //30 Days Of JavaScript30 Days Of JavaScript
+const challenge3 = '30 Days Of JavaScript';
+console.log(challenge3.repeat(2)); //30 Days Of JavaScript30 Days Of JavaScript
 
 
 
@@ -145,40 +144,40 @@ console.log(paragraph2);
 
 
 //3. Check if typeof '10' is exactly equal to 10. If not make it exactly equal.
-const numberTen = '10';
-const numberTen2 = '10';
-console.log(numberTen == numberTen2); //true
+const numberTenTypeofString = '10';
+const numberTenTypeofString2 = '10';
+console.log(numberTenTypeofString  === numberTenTypeofString); //true
 
 
 //4. Check if parseFloat('9.8') is equal to 10 if not make it exactly equal with 10.
-const numFloat = parseFloat('9.81');
-const numberTen3 = 10;
-console.log(numFloat === numberTen3); //false
+const numberFloatTypeofString = parseFloat('9.81');
+const numberTenTypeofNumber3 = 10;
+console.log(numberFloatTypeofString === numberTenTypeofNumber3); //false
 
 
 //5. Check if 'on' is found in both python and jargon
-const foun_d = 'python and jargon';
-console.log(foun_d.match(/on/gi)); //[ 'on', 'on' ]
+const found_On = 'python and jargon';
+console.log(found_On.match(/on/gi)); //[ 'on', 'on' ]
 
 
 //6. I hope this course is not full of jargon. Check if jargon is in the sentence.
-const phrase3 = 'I hope this course is not full of jargon';
-console.log(phrase3.search('jargon')); //34
+const phrase2 = 'I hope this course is not full of jargon';
+console.log(phrase2.search('jargon')); //34
 
 
 //7. Generate a random number between 0 and 100 inclusively.
-const num = Math.floor(Math.random() * 101);
-console.log(num); //54
+const generateRandomNumber = Math.floor(Math.random() * 101);
+console.log(generateRandomNumber); //54
 
 
 //8. Generate a random number between 50 and 100 inclusively.
-const num2 = Math.floor(Math.random() * 51) + 50;
-console.log(num2); //79
+const generateRandomNumber2 = Math.floor(Math.random() * 51) + 50;
+console.log(generateRandomNumber2); //79
 
 
 //9. Generate a random number between 0 and 255 inclusively.
-const num3 = Math.floor(Math.random() * 256);
-console.log(num3); //53
+const generateRandomNumber3 = Math.floor(Math.random() * 256);
+console.log(generateRandomNumber3); //53
 
 
 //10. Access the 'JavaScript' string characters using a random number.
@@ -206,8 +205,8 @@ console.log('1\t1\t1\t1\t1\n2\t1\t2\t4\t8\n3\t1\t3\t9\t27\n4\t1\t4\t16\t64\n5\t1
 
 
 //12. Use substr to slice out the phrase 'You cannot end a sentence with because because because is a conjunction' from the following sentence:'You cannot end a sentence with because because because is a conjunction'
-const phrase4 = 'You cannot end a sentence with because because because is a conjunction';
-console.log(phrase4.substr(31, 24)); //because because because
+const phrase3 = 'You cannot end a sentence with because because because is a conjunction';
+console.log(phrase3.substr(31, 24)); //because because because
 
 
 
