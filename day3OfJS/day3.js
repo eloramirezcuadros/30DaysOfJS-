@@ -28,18 +28,18 @@ console.log(numberTenTypeofString === numberTenTypeofNumber); //false
 //3. Check if parseInt('9.8') is equal to 10
 
 const numberFloatString = parseFloat('9.81');
-const numberTenTypeofNumbe_r = 10
-console.log(numberFloatString === numberTenTypeofNumbe_r); //false
+const theNumberTenTypeofNumber = 10
+console.log(numberFloatString === theNumberTenTypeofNumber); //false
 
 /*
 4. Boolean value is either true or false.
 i. Write three JavaScript statement which provide truthy value.
 */
-const fullString = true;
+const theStringTrue = true;
 const tenIsHigherThanNine = 10 > 9;
 const equalNumber = 1 === 1;
 
-console.log(fullString); //true
+console.log(theStringTrue); //true
 console.log(tenIsHigherThanNine); //true
 console.log(equalNumber); //true
 
@@ -47,11 +47,11 @@ console.log(equalNumber); //true
 
 const emptyString = '';
 const tenIsHigherThanEleven = 10 > 11;
-const equalNumber2 = 1 == 2;
+const theEqualNumber = 1 == 2;
 
 console.log(emptyString); //false
 console.log(tenIsHigherThanEleven); //false
-console.log(equalNumber2); //false
+console.log(theEqualNumber); //false
 
 /*
 5. Figure out the result of the following comparison expression first without using console.log(). After you decide the result confirm it using console.log()
@@ -67,21 +67,33 @@ ix. 4 != '4'  //true
 x. 4 == '4'   //true
 xi. 4 === '4' //false
 */
-console.log(4 > 3); //true
-console.log(4 >= 3); //true
-console.log(4 < 3); //false
-console.log(4 <= 3); //false
-console.log(4 == 4); //true
-console.log(4 === 4); //true
-console.log(4 != 4); //false
-console.log(4 !== '4'); //true
-console.log(4 != '4'); //false
-console.log(4 == '4'); //true
-console.log(4 === '4'); //false
+const greaterThanSign = 4 > 3;
+const greaterThanOrEqualTo = 4 >= 3;
+const lessThanSign = 4 < 3;
+const lessThanSignOrEqualTo = 4 <= 3;
+const comparisonSign = 4 == 4;
+const strictEqualitySign = 4 === 4;
+const notEqualToSign = 4 != 4;
+const strictInequalitySign = 4 !== '4';
+const notEqualToAndString = 4 != '4';
+const comparisonSignAndString = 4 == '4';
+const strictEqualityAndString = 4 === '4';
+
+console.log(greaterThanSign); //true
+console.log(greaterThanOrEqualTo); //true
+console.log(lessThanSign); //false
+console.log(lessThanSignOrEqualTo); //false
+console.log(comparisonSign); //true
+console.log(strictEqualitySign); //true
+console.log(notEqualToSign); //false
+console.log(strictInequalitySign); //true
+console.log(notEqualToAndString); //false
+console.log(comparisonSignAndString); //true
+console.log(strictEqualityAndString); //false
 
 //xii. Find the length of python and jargon and make a falsy comparison statement.
-
-console.log('python'.length > 'jargon'.length); //false
+const theComparisonBetweenPythonAndJargon = 'python'.length == 'jargon'.length;
+console.log(theComparisonBetweenPythonAndJargon); //false
 
 /*
 6. Figure out the result of the following expressions first without using console.log(). After you decide the result confirm it by using console.log().
@@ -94,23 +106,35 @@ vi. !(4 < 3)                       //true
 vii. !(false)                      //true
 viii. !(4 > 3 && 10 < 12)          //false
 ix. !(4 > 3 && 10 > 12)            //true
-x. !(4 === '4')                    //false
+x. !(4 === '4')                    //false   
 */ 
-console.log(4 > 3 && 10 < 12); //true
-console.log(4 > 3 && 10 > 12); //false
-console.log(4 > 3 || 10 < 12); //true
-console.log(4 > 3 || 10 > 12); //true
-console.log(!(4 > 3)); //false
-console.log(!(4 < 3)); //true
-console.log(!(false)); //true
-console.log(!(4 > 3 && 10 < 12)); //false
-console.log(!(4 > 3 && 10 > 12)); //true
-console.log(!(4 === '4')); //true
+const greaterThanSignMoreAndOperatorMoreLessSign = 4 > 3 && 10 < 12;
+const greaterThanSignMoreAndOperatorMoreGreaterSign = 4 > 3 && 10 > 12;
+const greaterThanSignMoreOrOperatorMoreLessSign = 4 > 3 || 10 < 12;
+const greaterThanSignMoreOrOperatorMoreGreaterSign = 4 > 3 || 10 > 12;
+const withExclamationSignMoreGreaterThan = !(4 > 3);
+const withExclamationLessThan = !(4 < 3);
+const theFalseComparison = !(false);
+const withExclamationSignMoreGreaterThanSignMoreAndOperatorMoreLessSign = !(4 > 3 && 10 < 12);
+const withExclamationSignMoreGreaterThanSignMoreAndOperatorMoreGreaterSign = !(4 > 3 && 10 > 12);
+const withExclamationSignMoreStrictEqualityAndString = !(4 === '4');
+
+console.log(greaterThanSignMoreAndOperatorMoreLessSign); //true
+console.log(greaterThanSignMoreAndOperatorMoreGreaterSign); //false
+console.log(greaterThanSignMoreOrOperatorMoreLessSign); //true
+console.log(greaterThanSignMoreOrOperatorMoreGreaterSign); //true
+console.log(withExclamationSignMoreGreaterThan); //false
+console.log(withExclamationLessThan); //true
+console.log(theFalseComparison); //true
+console.log(withExclamationSignMoreGreaterThanSignMoreAndOperatorMoreLessSign); //false
+console.log(withExclamationSignMoreGreaterThanSignMoreAndOperatorMoreGreaterSign); //true
+console.log(withExclamationSignMoreStrictEqualityAndString); //true
 
 //xi. There is no 'on' in both dragon and python
 
-const foundOn = 'dragon and python';
-console.log(foundOn.includes('on')); //true
+const theWordOn = 'dragon and python';
+const theWordOnFoundInString = theWordOn.includes('on')
+console.log(theWordOnFoundInString); //true
 
 
 /*
@@ -181,13 +205,13 @@ console.log(`The perimeter of the triangle is ${perimeter}`); //The perimeter of
 
 //3. Get length and width using prompt and calculate an area of rectangle (area = length x width and the perimeter of rectangle (perimeter = 2 x (length + width))
 
-const aLeng = Number(prompt('enter fist value of area rectangle'));   //first value 20
-const aWid = Number(prompt('enter second value of area rectangle'));  //second value 15
-const leng = Number(prompt('enter first value of the rectangle'));    //first value 30
-const wid = Number(prompt('enter second value of the rectangle'));    //second value 20
-const area2 = aLeng * aWid;
-const perimeter2 = 2 * (leng + wid);
-console.log(`The area of a rectangle is ${area2} and the perimeter of the rectangle is ${perimeter2}`); //The area of a rectangle is 300 and the perimeter of the rectangle is 100
+const areaLength = Number(prompt('enter fist value of area rectangle'));   //first value 20
+const areaWidth = Number(prompt('enter second value of area rectangle'));  //second value 15
+const perimeterLength = Number(prompt('enter first value of the rectangle'));    //first value 30
+const perimeterWidth = Number(prompt('enter second value of the rectangle'));    //second value 20
+const areaRectangle = areaLength * areaWidth;
+const perimeterRectangle = 2 * (perimeterLength + perimeterWidth);
+console.log(`The area of a rectangle is ${areaRectangle} and the perimeter of the rectangle is ${perimeterRectangle}`); //The area of a rectangle is 300 and the perimeter of the rectangle is 100
 
 
 //4. Get radius using prompt and calculate the area of a circle (area = pi x r x r) and circumference of a circle(c = 2 x pi x r) where pi = 3.14.
@@ -196,9 +220,9 @@ const r1 = Number(prompt('enter fist value of area circle'));   //first value 20
 const r2 = Number(prompt('enter second value of area circle')); //second value 10
 const r3 = Number(prompt('enter first value of the circle'));   //first value 25
 const pi = 3.14;
-const area3 = pi * r1 * r2;
+const areaCircunference = pi * r1 * r2;
 const circunference = 2 * pi * r3;
-console.log(`The area of a circle is ${area3} and the circunference of the circle is ${circunference}`); //The area of a circle is 628 and the circunference of the circle is 157
+console.log(`The area of a circle is ${areaCircunference} and the circunference of the circle is ${circunference}`); //The area of a circle is 628 and the circunference of the circle is 157
 
 
 //5. Calculate the slope, x-intercept and y-intercept of y = 2x -2
@@ -226,8 +250,8 @@ console.log(slopeCalculate());
 
 
 //7. Compare the slope of above two questions.
-
-console.log((2 / 2) == 2); //false
+const theSlopeOfAboveTwoQuestions = (2 / 2) == 2;
+console.log(theSlopeOfAboveTwoQuestions); //false
 
 
 //8. Calculate the value of y (y = x^2 + 6x + 9). Try to use different x values and figure out at what x value y is 0.
@@ -245,29 +269,29 @@ Enter hours: 40
 Enter rate per hour: 28
 Your weekly earning is 1120
 */
-const hou_r = prompt('Insert hours here');
-const rateHour = prompt('Insert rate per hour');
-const total = hou_r * rateHour;
-alert(`Your weekly earning is ${total}`);
+const theHour = prompt('Insert hours here');
+const ratePerHour = prompt('Insert rate per hour');
+const totalHours = theHour  * ratePerHour;
+alert(`Your weekly earning is ${totalHours}`);
 
 
 //10. If the length of your name is greater than 7 say, your name is long else say your name is short.
 
-const findLengthName = 'luisa';
-const findLengthName2 = nam_e.length;
-if (findLengthName2 >= 7) {
-    console.log(`${findLengthName2} letters, your name is greater`);  
+const nameLong = 'luisa';
+const theNameLength = nameLong.length;
+if (theNameLength >= 7) {
+    console.log(`${theNameLength} letters, your name is greater`);  
 } else {
-    console.log(`${findLengthName2} letters, your name is short`);
+    console.log(`${theNameLength} letters, your name is short`);
 }
 //5 letters, your name is short.
 
 
 //11. Compare your first name length and your family name length and you should get this output.
 
-const firstName2 = 'luisa';
+const theFirstName = 'luisa';
 const familyName = 'ramirez';
-firstName2.length > familyName.length ? console.log(`your first name is greater than your family name`) : console.log(`your last name is greater than your name`);
+theFirstName.length > familyName.length ? console.log(`your first name is greater than your family name`) : console.log(`your last name is greater than your name`);
 //your last name is greater than your name.
 
 
@@ -279,8 +303,8 @@ I am 225 years older than you.
 */
 const myAge = 250;
 const yourAge = 25;
-const total2 = myAge - yourAge;
-alert(`I am ${total2} years older than you.`);
+const totalAge = myAge - yourAge;
+alert(`I am ${totalAge} years older than you.`);
 
 
 /*
@@ -291,11 +315,11 @@ You are 25. You are old enough to drive
 Enter birth year: 2005
 You are 15. You will be allowed to drive after 3 years.
 */
-const yea_r = Number(prompt("Enter birth year:"));
-if (yea_r <= 2002) {
-    console.log(`You are ${yea_r = 25}. You are old enough to drive`);
+const birthYear = Number(prompt("Enter birth year:"));
+if (birthYear <= 2002) {
+    console.log(`You are ${birthYear = 25}. You are old enough to drive`);
 } else {
-    console.log(`you are ${yea_r = 15}, you will be allowed to drive after years`)
+    console.log(`you are ${birthYear = 15}, you will be allowed to drive after years`)
 }
 
 
@@ -320,11 +344,11 @@ YYYY-MM-DD HH:mm
 DD-MM-YYYY HH:mm
 DD/MM/YYYY HH:mm
 */
-const createReadableTimeFormat = new Date();
-const YYYMMDD = `${createReadableTimeFormat.getFullYear()}/${createReadableTimeFormat.getMonth()}/${createReadableTimeFormat.getDate()}`;
-const DDMMYYYY = `${createReadableTimeFormat.getDate()}/${createReadableTimeFormat.getMonth()}/${createReadableTimeFormat.getFullYear()}`;
-const DdMmYYy = `${createReadableTimeFormat.getDate()}/${createReadableTimeFormat.getMonth()}/${createReadableTimeFormat.getFullYear()}`;
-const hHmM = `  ${createReadableTimeFormat.getHours()}:${createReadableTimeFormat.getMinutes()}`;
+const theReadableTimeFormat = new Date();
+const YYYMMDD = `${theReadableTimeFormat.getFullYear()}/${theReadableTimeFormat.getMonth()}/${theReadableTimeFormat.getDate()}`;
+const DDMMYYYY = `${theReadableTimeFormat.getDate()}/${theReadableTimeFormat.getMonth()}/${theReadableTimeFormat.getFullYear()}`;
+const DdMmYYy = `${theReadableTimeFormat.getDate()}/${theReadableTimeFormat.getMonth()}/${theReadableTimeFormat.getFullYear()}`;
+const hHmM = `  ${theReadableTimeFormat.getHours()}:${theReadableTimeFormat.getMinutes()}`;
 
 console.log(YYYMMDD + hHmM); //2021/5/17  18:15
 console.log(DDMMYYYY + hHmM); //17/5/2021  18:15
@@ -337,10 +361,10 @@ Exercises: Level 3
 1. Create a human readable time format using the Date time object. The hour and the minute should be all the time two digits(7 hours should be 07 and 5 minutes should be 05 )
 YYY-MM-DD HH:mm eg. 20120-01-02 07:05
 */
-const createReadableTimeFormat2 = new Date();
-const YYYMMDD2 = `${date2.getFullYear()}/${createReadableTimeFormat2.getMonth()}/${createReadableTimeFormat2.getDate()}`;
+const aReadableTimeFormat = new Date();
+const YYYMMDD2 = `${date2.getFullYear()}/${aReadableTimeFormat.getMonth()}/${aReadableTimeFormat.getDate()}`;
 
 console.log(YYYMMDD2);
-console.log(createReadableTimeFormat2.toLocaleTimeString(['en-US'], { hour: '2-digit', minute: '2-digit' }));
+console.log(aReadableTimeFormat.toLocaleTimeString(['en-US'], { hour: '2-digit', minute: '2-digit' }));
 //2021/5/17
 //06:18 PM
