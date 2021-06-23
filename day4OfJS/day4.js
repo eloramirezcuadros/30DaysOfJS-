@@ -21,12 +21,12 @@ Based on the comparison and log the result to console stating who is older (me o
 Enter your age: 30
 You are 5 years older than me.
 */
-const age2 = Number(prompt('Enter age:'));
+const myAge = Number(prompt('Enter age:'));
 const yourAge = Number(prompt("Enter your age:"));
-if (age2 >= yourAge) {
-    console.log(`i'm older than you with ${age2 - yourAge} years old.`);
+if (myAge >= yourAge) {
+    console.log(`i'm older than you with ${myAge- yourAge} years old.`);
 } else {
-    console.log(`you are ${yourAge - age2} years older than me.`);
+    console.log(`you are ${yourAge - myAge} years older than me.`);
 }
 
 
@@ -95,8 +95,8 @@ December, January or February, the season is Winter.
 March, April or May, the season is Spring
 June, July or August, the season is Summer
 */
-const month = prompt('enter month to check seasons');
-switch (month) {
+const monthsAndSeasons = prompt('enter month to check seasons');
+switch (monthsAndSeasons) {
     case 'september':
     case 'october':
     case 'november':
@@ -161,13 +161,13 @@ Exercises: Level 3
   Enter a month: FEbruary
   February has 28 days.
 */
-const month2 = prompt('Enter a month:').toLowerCase();
-if (month2 === 'january' || month2 === 'march' || month2 === 'may' || month2 === 'july' || month2 === 'august' || month2 === 'october' || month2 === 'december') {
-    console.log(`${month2} has 31 days`);
-} else if (month2 === 'april' || month2 === 'june' || month2 === 'september' || month2 === 'november') {
-    console.log(`${month2} has 30 days`);
-} else if (month2 === 'february') {
-    console.log(`${month2} has 28 days`);
+const month = prompt('Enter a month:').toLowerCase();
+if (month === 'january' || month === 'march' || month === 'may' || month === 'july' || month === 'august' || month === 'october' || month === 'december') {
+    console.log(`${month} has 31 days`);
+} else if (month === 'april' || month === 'june' || month === 'september' || month === 'november') {
+    console.log(`${month} has 30 days`);
+} else if (month === 'february') {
+    console.log(`${month} has 28 days`);
 } else {
     console.log('invalid word');
 }
