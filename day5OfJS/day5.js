@@ -27,102 +27,154 @@ const webTechs = [
 */
 
 //1. Declare an empty array
-function empty_Array(elements) {
-  return new Array(elements);
+function createArray(arrayLength) {
+    return new Array(arrayLength);
 }
-const createArray1 = empty_Array(0);
-console.log(createArray1); //[]
+const emptyArray = createArray(0);
+console.log(emptyArray); //[]
 
-// QUE ME LLEVE LA VERGA DE UNA PUTA VEZ, Y NO ME VUELVA A TRAER GANARARRREEEAAAAAA
 
 //2. Declare an array with more than 5 number of elements
-function fillTheArray(number, arrayInput) {
-  return arrayInput.fill(number);
+function fillTheArray(numberOfElements, array) {
+    return array.fill(numberOfElements);
 }
-const arrayWithMoreThanFiveNum = createArray(8);               
-const arrayOfNumbers = fillTheArray(6, arrayWithMoreThanFiveNum)
-console.log(arrayOfNumbers);
+const arrayWithElementsToFill = createArray(7);
+const arrayWithElements = fillTheArray(0, arrayWithElementsToFill);
+console.log(arrayWithElements); //[0, 0, 0, 0, 0, 0, 0]
 
-//TÚ, SI TÚ, PUTO EL QUE LO LEA
 
 //3. Find the length of your array
+function find(array) {
+    return array.length;
+}
+const findElements = find(arrayWithElements);
+console.log(findElements); //7
 
-const arra_y3 = ['Hello', 'My', 'Name', 'Is', 'Luisa', 'Ramírez', '22'];
-console.log(arra_y3.length);
 
+//4. Get the first item, the middle item and the last item of the array.    
+function obtainItems(array) {
 
-//4. Get the first item, the middle item and the last item of the array
-/*
-const arra_y4 = ['Hello', 'My', 'Name', 'Is', 'Luisa', 'Ramírez', 'Cuadros'];
-console.log(arra_y4[0], arra_y4[3], arra_y4[arra_y4.length - 1]);
-*/
+    const firstPosition = array[0];
+    const middlePosition = array[Math.floor((array.length - 1) / 2)];
+    const lastPosition = array[array.length - 1];
+    const allPositions = [firstPosition, middlePosition, lastPosition];
+
+    return allPositions;
+}
+
+const arrayWithItems = obtainItems([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]);
+console.log(arrayWithItems); //[ 1, 6, 12 ]
+
 
 //5. Declare an array called mixedDataTypes, put different data types in the array and find the length of the array. The array size should be greater than 5
-/*
-const mixedDataTypes = ['Hello', 4, true, 'Colombia', , 'Lasagna', 'Mango'];
-console.log(mixedDataTypes.length);
-*/
+function arraySize(array) {
+    return array.length;
+}
+const findItems = arraySize(['Hello', 4, true, 'Colombia', 'Lasagna', 'Mango']);
+console.log(findItems); //6
+
 
 //6. Declare an array variable name itCompanies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon
-
-//const itCompanies = ['Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon'];
+function assignCompanies(array) {
+    return array;
+}
+const itCompanies = assignCompanies(['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']);
 
 
 //7. Print the array using console.log()
-
-//console.log(itCompanies);
+console.log(itCompanies);
+/*
+[
+  'Facebook',
+  'Google',
+  'Microsoft',
+  'Apple',
+  'IBM',
+  'Oracle',
+  'Amazon'
+]
+*/
 
 
 //8. Print the number of companies in the array
-/*
-const itCompanies3 = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'];
-console.log(itCompanies3.length);
-*/
+function numberCompanies(array) {
+    return array.length;
+}
+const printedCompanies = numberCompanies(['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']);
+console.log(printedCompanies); //7
+
 
 //9. Print the first company, middle and last company
-/*
-const itCompanies4 = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'];
-console.log(itCompanies4[0], itCompanies4[3], itCompanies4[itCompanies4.length - 1]);
-*/
+function positionCompanies(array) {
+
+    const firstCompany = array[0];
+    const middleCompany = array[Math.floor((array.length - 1) / 2)];
+    const lastCompany = array[array.length - 1];
+    const allCompanies = [firstCompany, middleCompany, lastCompany];
+
+    return allCompanies;
+}
+
+const arrayWithCompanies = positionCompanies(['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']);
+console.log(arrayWithCompanies); //[ 'Facebook', 'Apple', 'Amazon' ]
+
 
 //10. Print out each company
+function printEachCompany(array) {
+    return array.forEach(element => console.log(element));
+}
+const companies = printEachCompany(['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']);
 /*
-const itCompanies5 = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'];
-itCompanies5.forEach(element => console.log(element));
+Facebook
+Google
+Microsoft
+Apple
+IBM
+Oracle
+Amazon
 */
 
 //11. Change each company name to uppercase one by one and print them out. 
-/*
-const itCompanies6 = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'];
-const result = [];
-let check = itCompanies6.forEach((element) => result.push(element.toUpperCase()));
-
-console.log(result);
-*/
-
-
-/*
-12. Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM,Oracle and Amazon are big IT companies. 
-
-const itCompanies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'];
-const arr1 = itCompanies[0] + itCompanies[1] + itCompanies[2] + itCompanies[3] + itCompanies[4] + itCompanies[5];
-const arr2 = itCompanies[6];
-console.log(`${arr1 } and ${arr2} are big IT companies.`);
-*/
-
-
-/*
-13. Check if a certain company exists in the itCompanies array. If it exist return the company else return a company is not found
-
-const itCompanies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'];
-let index = itCompanies.indexOf('Facebook');
-
-if (index != -1) {
-    console.log('This company does exist in the array')
-} else {
-    console.log('This company does not exist in the array')
+function passCompanyCapitaLetter(array) {
+    const emptyArr = [];
+    const capitaLetter = array.forEach((element) => emptyArr.push(element.toUpperCase()));
+    return emptyArr;
 }
+const capitalLetterCompanies = passCompanyCapitaLetter(['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']);
+console.log(capitalLetterCompanies);
+/*
+[
+  'FACEBOOK',
+  'GOOGLE',
+  'MICROSOFT',
+  'APPLE',
+  'IBM',
+  'ORACLE',
+  'AMAZON'
+]
 */
+
+//12. Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM,Oracle and Amazon are big IT companies. 
+function arrayInPhrase(array) {
+    const firstPartSentence = array[0] + ", " + array[1] + ", " + array[2] + ", " + array[3] + ", " + array[4] + ", " + array[5];
+    const secondPartSentence = array[6];
+    const newArrayPhrase = `${firstPartSentence} and ${secondPartSentence} are big IT companies.`;
+    return newArrayPhrase;
+}
+const arrayWithStrings = arrayInPhrase(['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']);
+console.log(arrayWithStrings); //Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon are big IT companies.
+
+
+//13. Check if a certain company exists in the itCompanies array. If it exist return the company else return a company is not found
+function reviewTheArray(array) {
+
+    if (index != -1) {
+        console.log('This company does exist in the array');
+    } else {
+        console.log('This company does not exist in the array');
+    }
+}
+const itCompaniesReview = reviewTheArray(itCompanies);
 
 
 /*
