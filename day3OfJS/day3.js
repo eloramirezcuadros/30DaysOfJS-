@@ -19,14 +19,14 @@ console.log(typeof 22); //number
 console.log(typeof false); //boolean
 console.log(typeof 2021); //number
 
-//2. Check if type of '10' is equal to 10
 
+//2. Check if type of '10' is equal to 10
 const numberTenTypeofString = '10';
 const numberTenTypeofNumber = 10;
 console.log(numberTenTypeofString === numberTenTypeofNumber); //false
 
-//3. Check if parseInt('9.8') is equal to 10
 
+//3. Check if parseInt('9.8') is equal to 10
 const numberFloatString = parseFloat('9.81');
 const theNumberTenTypeofNumber = 10
 console.log(numberFloatString === theNumberTenTypeofNumber); //false
@@ -44,14 +44,14 @@ console.log(tenIsHigherThanNine); //true
 console.log(equalNumber); //true
 
 //ii. Write three JavaScript statement which provide falsy value.
-
 const emptyString = '';
 const tenIsHigherThanEleven = 10 > 11;
-const theEqualNumber = 1 == 2;
+const theEqualNumber = 1 === 2;
 
 console.log(emptyString); //false
 console.log(tenIsHigherThanEleven); //false
 console.log(theEqualNumber); //false
+
 
 /*
 5. Figure out the result of the following comparison expression first without using console.log(). After you decide the result confirm it using console.log()
@@ -131,7 +131,6 @@ console.log(withExclamationSignMoreGreaterThanSignMoreAndOperatorMoreGreaterSign
 console.log(withExclamationSignMoreStrictEqualityAndString); //true
 
 //xi. There is no 'on' in both dragon and python
-
 const theWordOn = 'dragon and python';
 const theWordOnFoundInString = theWordOn.includes('on')
 console.log(theWordOnFoundInString); //true
@@ -145,32 +144,26 @@ const yearToday = new Date();
 console.log(yearToday.getFullYear()); //2021
 
 //ii. What is the month today as a number?
-
 const monthToday = new Date();
 console.log(monthToday.getMonth() + 1); //6
 
 //iii. What is the date today?
-
 const dateToday = new Date();
 console.log(dateToday); //2021-06-16T22:20:58.228Z
 
 //iv. What is the day today as a number?
-
 const dayToday = new Date();
 console.log(dayToday.getDate()); //16
 
 //v. What is the hours now?
-
 const hoursNow = new Date();
 console.log(hoursNow.getHours()); //17
 
 //vi. What is the minutes now?
-
 const minutesNow = new Date();
 console.log(minutesNow.getMinutes()); //20
 
 //vii. Find out the numbers of seconds elapsed from January 1, 1970 to now
-
 const numberSeconds = new Date();
 console.log(numberSeconds.getTime()); //1623882058236
 
@@ -204,7 +197,6 @@ console.log(`The perimeter of the triangle is ${perimeter}`); //The perimeter of
 
 
 //3. Get length and width using prompt and calculate an area of rectangle (area = length x width and the perimeter of rectangle (perimeter = 2 x (length + width))
-
 const areaLength = Number(prompt('enter fist value of area rectangle'));   //first value 20
 const areaWidth = Number(prompt('enter second value of area rectangle'));  //second value 15
 const perimeterLength = Number(prompt('enter first value of the rectangle'));    //first value 30
@@ -215,7 +207,6 @@ console.log(`The area of a rectangle is ${areaRectangle} and the perimeter of th
 
 
 //4. Get radius using prompt and calculate the area of a circle (area = pi x r x r) and circumference of a circle(c = 2 x pi x r) where pi = 3.14.
-
 const r1 = Number(prompt('enter fist value of area circle'));   //first value 20
 const r2 = Number(prompt('enter second value of area circle')); //second value 10
 const r3 = Number(prompt('enter first value of the circle'));   //first value 25
@@ -226,7 +217,6 @@ console.log(`The area of a circle is ${areaCircunference} and the circunference 
 
 
 //5. Calculate the slope, x-intercept and y-intercept of y = 2x -2
-
 function slopeCalculate() {
     const x = prompt("insert the intercept here", );
     const y = prompt((2 * x) - 2);
@@ -236,7 +226,6 @@ console.log(slopeCalculate());
 
 
 //6. Slope is (m = y2-y1/x2-x1). Find the slope between point (2, 2) and point(6,10)
-
 function slopeCalculate() {
     const x1 = 2;
     const x2 = 6;
@@ -255,7 +244,6 @@ console.log(theSlopeOfAboveTwoQuestions); //false
 
 
 //8. Calculate the value of y (y = x^2 + 6x + 9). Try to use different x values and figure out at what x value y is 0.
-
 function calculateY() {
     const range = [-8, -7, -6, -5, -4, -3, -2, -1, 0];
     return range.map(x => Math.pow(x, 2) + 6 * x + 9);
@@ -276,9 +264,8 @@ alert(`Your weekly earning is ${totalHours}`);
 
 
 //10. If the length of your name is greater than 7 say, your name is long else say your name is short.
-
-const nameLong = 'luisa';
-const theNameLength = nameLong.length;
+const nameSize = 'luisa';
+const theNameLength = nameSize.length;
 if (theNameLength >= 7) {
     console.log(`${theNameLength} letters, your name is greater`);  
 } else {
@@ -288,7 +275,6 @@ if (theNameLength >= 7) {
 
 
 //11. Compare your first name length and your family name length and you should get this output.
-
 const theFirstName = 'luisa';
 const familyName = 'ramirez';
 theFirstName.length > familyName.length ? console.log(`your first name is greater than your family name`) : console.log(`your last name is greater than your name`);
