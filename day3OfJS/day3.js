@@ -31,10 +31,9 @@ const numberFloatString = parseFloat('9.81');
 const theNumberTenTypeofNumber = 10
 console.log(numberFloatString === theNumberTenTypeofNumber); //false
 
-/*
-4. Boolean value is either true or false.
-i. Write three JavaScript statement which provide truthy value.
-*/
+
+//4. Boolean value is either true or false.
+//i. Write three JavaScript statement which provide truthy value.
 const theStringTrue = true;
 const tenIsHigherThanNine = 10 > 9;
 const equalNumber = 1 === 1;
@@ -92,7 +91,7 @@ console.log(comparisonSignAndString); //true
 console.log(strictEqualityAndString); //false
 
 //xii. Find the length of python and jargon and make a falsy comparison statement.
-const theComparisonBetweenPythonAndJargon = 'python'.length == 'jargon'.length;
+const theComparisonBetweenPythonAndJargon = 'python'.length != 'jargon'.length;
 console.log(theComparisonBetweenPythonAndJargon); //false
 
 /*
@@ -107,7 +106,7 @@ vii. !(false)                      //true
 viii. !(4 > 3 && 10 < 12)          //false
 ix. !(4 > 3 && 10 > 12)            //true
 x. !(4 === '4')                    //false   
-*/ 
+*/
 const greaterThanSignMoreAndOperatorMoreLessSign = 4 > 3 && 10 < 12;
 const greaterThanSignMoreAndOperatorMoreGreaterSign = 4 > 3 && 10 > 12;
 const greaterThanSignMoreOrOperatorMoreLessSign = 4 > 3 || 10 < 12;
@@ -136,10 +135,9 @@ const theWordOnFoundInString = theWordOn.includes('on')
 console.log(theWordOnFoundInString); //true
 
 
-/*
-7. Use the Date object to do the following activities
-i. What is the year today?
-*/
+
+//7. Use the Date object to do the following activities
+//i. What is the year today?
 const yearToday = new Date();
 console.log(yearToday.getFullYear()); //2021
 
@@ -176,10 +174,10 @@ Enter base: 20
 Enter height: 10
 The area of the triangle is 50
 */
-const base = Number(prompt('enter base of the triangle'));  //20
-const height = Number(prompt('enter height of the triangle'));  //10
+const base = Number(prompt('enter base of the triangle')); //20
+const height = Number(prompt('enter height of the triangle')); //10
 const area = 0.5 * base * height;
-console.log(`The area of the triangle is ${area}`);  //The area of the triangle is 100
+console.log(`The area of the triangle is ${area}`); //The area of the triangle is 100
 
 
 /*
@@ -197,49 +195,39 @@ console.log(`The perimeter of the triangle is ${perimeter}`); //The perimeter of
 
 
 //3. Get length and width using prompt and calculate an area of rectangle (area = length x width and the perimeter of rectangle (perimeter = 2 x (length + width))
-const areaLength = Number(prompt('enter fist value of area rectangle'));   //first value 20
-const areaWidth = Number(prompt('enter second value of area rectangle'));  //second value 15
-const perimeterLength = Number(prompt('enter first value of the rectangle'));    //first value 30
-const perimeterWidth = Number(prompt('enter second value of the rectangle'));    //second value 20
-const areaRectangle = areaLength * areaWidth;
-const perimeterRectangle = 2 * (perimeterLength + perimeterWidth);
+const length = Number(prompt('enter length')); //first value 20
+const width = Number(prompt('enter width ')); //second value 15
+const areaRectangle = length * width;
+const perimeterRectangle = 2 * (length + width);
 console.log(`The area of a rectangle is ${areaRectangle} and the perimeter of the rectangle is ${perimeterRectangle}`); //The area of a rectangle is 300 and the perimeter of the rectangle is 100
 
 
 //4. Get radius using prompt and calculate the area of a circle (area = pi x r x r) and circumference of a circle(c = 2 x pi x r) where pi = 3.14.
-const r1 = Number(prompt('enter fist value of area circle'));   //first value 20
-const r2 = Number(prompt('enter second value of area circle')); //second value 10
-const r3 = Number(prompt('enter first value of the circle'));   //first value 25
-const pi = 3.14;
-const areaCircunference = pi * r1 * r2;
-const circunference = 2 * pi * r3;
+const radius = Number(prompt('enter of value radius')); //first value 20
+const areaCircunference = (Math.PI * radius * radius);
+const circunference = ((2) * Math.PI * radius);
 console.log(`The area of a circle is ${areaCircunference} and the circunference of the circle is ${circunference}`); //The area of a circle is 628 and the circunference of the circle is 157
 
 
 //5. Calculate the slope, x-intercept and y-intercept of y = 2x -2
-function slopeCalculate() {
-    const x = prompt("insert the intercept here", );
-    const y = prompt((2 * x) - 2);
+function interceptCalculate() {
+    const x = prompt("insert the intercept here");
+    const y = ((2 * x) - 2);
     alert(`the slope is ${y}/${x}`);
 }
-console.log(slopeCalculate());
+interceptCalculate();
 
 
 //6. Slope is (m = y2-y1/x2-x1). Find the slope between point (2, 2) and point(6,10)
 function slopeCalculate() {
-    const x1 = 2;
-    const x2 = 6;
-    const y1 = 2;
-    const y2 = 10;
-    const total = (y2 - y1) / (x2 - x1);
-    alert(`the slope is m=${total}`);
-
+    const { x1, x2, y1, y2 } = points;
+    return (y2 - y1) / (x2 - x1);
 }
-console.log(slopeCalculate());
+slopeCalculate({ x1: 2, y1: 2, x2: 6, y2: 10 });
 
 
 //7. Compare the slope of above two questions.
-const theSlopeOfAboveTwoQuestions = (2 / 2) == 2;
+const theSlopeOfAboveTwoQuestions = interceptCalculate >= slopeCalculate;
 console.log(theSlopeOfAboveTwoQuestions); //false
 
 
@@ -259,15 +247,15 @@ Your weekly earning is 1120
 */
 const theHour = prompt('Insert hours here');
 const ratePerHour = prompt('Insert rate per hour');
-const totalHours = theHour  * ratePerHour;
+const totalHours = theHour * ratePerHour;
 alert(`Your weekly earning is ${totalHours}`);
 
 
 //10. If the length of your name is greater than 7 say, your name is long else say your name is short.
-const nameSize = 'luisa';
-const theNameLength = nameSize.length;
+const name = 'luisa';
+const theNameLength = name.length;
 if (theNameLength >= 7) {
-    console.log(`${theNameLength} letters, your name is greater`);  
+    console.log(`${theNameLength} letters, your name is long`);
 } else {
     console.log(`${theNameLength} letters, your name is short`);
 }
@@ -303,9 +291,9 @@ You are 15. You will be allowed to drive after 3 years.
 */
 const birthYear = Number(prompt("Enter birth year:"));
 if (birthYear <= 2002) {
-    console.log(`You are ${birthYear = 25}. You are old enough to drive`);
+    console.log(`You are ${2021 - birthYear}. You are old enough to drive`);
 } else {
-    console.log(`you are ${birthYear = 15}, you will be allowed to drive after years`)
+    console.log(`you are ${2021 - birthYear}, you will be allowed to drive after years`)
 }
 
 
@@ -348,7 +336,7 @@ Exercises: Level 3
 YYY-MM-DD HH:mm eg. 20120-01-02 07:05
 */
 const aReadableTimeFormat = new Date();
-const YYYMMDD2 = `${date2.getFullYear()}/${aReadableTimeFormat.getMonth()}/${aReadableTimeFormat.getDate()}`;
+const YYYMMDD2 = `${aReadableTimeFormat.getFullYear()}/${aReadableTimeFormat.getMonth()}/${aReadableTimeFormat.getDate()}`;
 
 console.log(YYYMMDD2);
 console.log(aReadableTimeFormat.toLocaleTimeString(['en-US'], { hour: '2-digit', minute: '2-digit' }));
