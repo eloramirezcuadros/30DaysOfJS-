@@ -143,7 +143,7 @@ console.log(yearToday.getFullYear()); //2021
 
 //ii. What is the month today as a number?
 const monthToday = new Date();
-console.log(monthToday.getMonth() + 1); //6
+console.log(monthToday.getMonth() + 1); //7
 
 //iii. What is the date today?
 const dateToday = new Date();
@@ -151,7 +151,7 @@ console.log(dateToday); //2021-06-16T22:20:58.228Z
 
 //iv. What is the day today as a number?
 const dayToday = new Date();
-console.log(dayToday.getDate()); //16
+console.log(dayToday.getDate()); //3
 
 //v. What is the hours now?
 const hoursNow = new Date();
@@ -215,15 +215,15 @@ function interceptCalculate() {
     const y = ((2 * x) - 2);
     alert(`the slope is ${y}/${x}`);
 }
-interceptCalculate();
+console.log(interceptCalculate());
 
 
 //6. Slope is (m = y2-y1/x2-x1). Find the slope between point (2, 2) and point(6,10)
-function slopeCalculate() {
+function slopeCalculate(points) {
     const { x1, x2, y1, y2 } = points;
     return (y2 - y1) / (x2 - x1);
 }
-slopeCalculate({ x1: 2, y1: 2, x2: 6, y2: 10 });
+console.log(slopeCalculate({ x1: 2, y1: 2, x2: 6, y2: 10 }));
 
 
 //7. Compare the slope of above two questions.
@@ -233,10 +233,10 @@ console.log(theSlopeOfAboveTwoQuestions); //false
 
 //8. Calculate the value of y (y = x^2 + 6x + 9). Try to use different x values and figure out at what x value y is 0.
 function calculateY() {
-    const range = [-8, -7, -6, -5, -4, -3, -2, -1, 0];
-    return range.map(x => Math.pow(x, 2) + 6 * x + 9);
+    const range = [-3];
+    return range.map(x => Math.pow(x, 2) + 6 * x + 9)
 }
-console.log(calculateY()); //[25, 16, 9, 4, 1, 0,  1, 4, 9]
+console.log(calculateY()); //[0]
 
 
 /*
