@@ -173,12 +173,12 @@ Exercises: Level 2
 Enter base: 20
 Enter height: 10
 The area of the triangle is 50
-*/
+
 const base = Number(prompt('enter base of the triangle')); //20
 const height = Number(prompt('enter height of the triangle')); //10
 const area = 0.5 * base * height;
 console.log(`The area of the triangle is ${area}`); //The area of the triangle is 100
-
+*/
 
 /*
 2. Write a script that prompt the user to enter side a, side b, and side c of the triangle and calculate the perimeter of triangle (perimeter = a + b + c)
@@ -186,7 +186,7 @@ Enter side a: 5
 Enter side b: 4
 Enter side c: 3
 The perimeter of the triangle is 12
-*/
+
 const a = Number(prompt('enter fist value of the triangle'));
 const b = Number(prompt('enter second value of the triangle'));
 const c = Number(prompt('enter third value of the triangle'));
@@ -207,13 +207,13 @@ const radius = Number(prompt('enter of value radius')); //first value 20
 const areaCircunference = (Math.PI * radius * radius);
 const circunference = ((2) * Math.PI * radius);
 console.log(`The area of a circle is ${areaCircunference} and the circunference of the circle is ${circunference}`); //The area of a circle is 628 and the circunference of the circle is 157
-
+*/
 
 //5. Calculate the slope, x-intercept and y-intercept of y = 2x -2
 function interceptCalculate() {
-    const x = prompt("insert the intercept here");
-    const y = ((2 * x) - 2);
-    alert(`the slope is ${y}/${x}`);
+    const x = (2 * (x));
+    const y = ((x) - 2);
+    return (y) / (x);
 }
 console.log(interceptCalculate());
 
@@ -244,12 +244,12 @@ console.log(calculateY()); //[0]
 Enter hours: 40
 Enter rate per hour: 28
 Your weekly earning is 1120
-*/
+
 const theHour = prompt('Insert hours here');
 const ratePerHour = prompt('Insert rate per hour');
 const totalHours = theHour * ratePerHour;
 alert(`Your weekly earning is ${totalHours}`);
-
+*/
 
 //10. If the length of your name is greater than 7 say, your name is long else say your name is short.
 const name = 'luisa';
@@ -274,12 +274,12 @@ theFirstName.length > familyName.length ? console.log(`your first name is greate
 const myAge = 250
 const yourAge = 25
 I am 225 years older than you.
-*/
+
 const myAge = 250;
 const yourAge = 25;
 const totalAge = myAge - yourAge;
 alert(`I am ${totalAge} years older than you.`);
-
+*/
 
 /*
 13. Using prompt get the year the user was born and if the user is 18 or above allow the user to drive if not tell the user to wait a certain amount of years.
@@ -287,20 +287,20 @@ Enter birth year: 1995
 You are 25. You are old enough to drive
 Enter birth year: 2005
 You are 15. You will be allowed to drive after 3 years.
-*/
+
 const birthYear = Number(prompt("Enter birth year:"));
 if (birthYear <= 2002) {
     console.log(`You are ${2021 - birthYear}. You are old enough to drive`);
 } else {
     console.log(`you are ${2021 - birthYear}, you will be allowed to drive after years`)
 }
-
+*/
 
 /*
 14. Write a script that prompt the user to enter number of years. Calculate the number of seconds a person can live. Assume some one lives just hundred years
 Enter number of yours you live: 100
 You lived 3153600000 seconds.
-*/
+
 const secondsInseconds = 60;
 const secondsInHour = secondsInseconds * 60;
 const secondsInDay = secondsInHour * 24;
@@ -309,7 +309,7 @@ const yearsLive = Number(prompt("how many years have you live?"));
 const secondsOld = yearsLive * secondsInYear;
 
 console.log(`you are ${secondsOld} seconds olds`);
-
+*/
 
 /*
 15. Create a human readable time format using the Date time object
